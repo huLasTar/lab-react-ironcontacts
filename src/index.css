@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+h1 {
+  color: #21325e;
+}
+
 table,
 tr,
 th,
