@@ -13,6 +13,13 @@ code {
     monospace;
 }
 
+table,
+tr,
+th,
+td {
+  border: 1px solid #3e497a;
+}
+
 .button {
   background-color: transparent;
   border: 2px solid #21325e;
@@ -24,17 +31,37 @@ code {
   font-size: 1rem;
   display: inline-block;
   margin: 5px;
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 
 .button:hover {
-  background-color: #f1d00a;
-  border: 2px solid #f1d00a;
-  color: #21325e;
+  background-color: #21325e;
+  color: #ffffff;
+}
+
+.deleteButton {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.deleteButton:hover {
+  background-color: #21325e;
+  border-color: #21325e;
+  color: #ffffff;
 }
 
 .contactsTable {
-  border: 2px solid #3e497a;
+  border-collapse: collapse;
+  border: 1px solid #3e497a;
   background-color: #ffffff;
   margin: 50px auto;
   text-align: center;
@@ -49,6 +76,7 @@ code {
 }
 
 .contactsTable .contactImg {
+  display: block;
   max-width: 100px;
   margin: 0;
 }

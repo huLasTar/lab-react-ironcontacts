@@ -36,12 +36,11 @@ function App() {
   };
 
   // Iteration 5:
-  const deleteContact = (contactId) => {
-    const filteredContacts = contacts.filter((contact) => {
-      return contact._id !== contactId;
-    });
-
-    setContacts(filteredContacts);
+  const deleteContact = (id) => {
+    const nonDeletedContacts = getContacts.filter(
+      (contact) => contact.id !== id
+    );
+    setContacts(nonDeletedContacts);
   };
 
   return (
